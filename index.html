@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <p>Bills</p>
+            <input id="amount" type="number" placeholder="Amount to be paid">
+
+            <p>Select tip %</p>
+            <div class="tips">
+                <div class="tip">5%</div>
+                <div class="tip">10%</div>
+                <div class="tip">15%</div>
+                <div class="tip">20%</div>
+                <div class="tip">25%</div>
+                <div class="tip">50%</div>
+            </div>
+
+            <p>Number of people</p>
+            <input  id="person" type="number" placeholder="Number of person sharing the bills"><br>
+            <button id="calculate">Calculate</button>
+        </div>
+        <div class="container2">
+            <p> Tip amount: ₹ <span id="tipamount">0</span><span> each</span> </p>
+            <p>Total: ₹ <span id="totalamount">0</span><span> each</span> </p>
+            <button id="reset">Reset
+            </button>
+        </div>
+
+    </div>
+</body>
+
+</html>
